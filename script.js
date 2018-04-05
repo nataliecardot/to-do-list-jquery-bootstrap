@@ -24,12 +24,12 @@ $(function() {
 
   // Click to delete
   $('ul').on('click', 'span', function(e) {
-    // fadeOut() hides element by setting to transparent
+    // fadeOut() hides element by setting it to transparent
     $(this).parent().fadeOut(500, function() {
       // Removes element along with its data and events
       $(this).remove();
     });
-    // Prevents event from bubbling up DOM tree,notifying any parent handlers of the event
+    // Prevents event from bubbling up DOM tree, notifying any parent handlers of it
     e.stopPropagation();
   });
 
