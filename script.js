@@ -40,8 +40,8 @@ $(function() {
       let itemText = $(this).val();
       // Clears input box
       $(this).val('');
-      // Creates new li from input and adds to ul
-      $('ul').append('<li><span><i class="fa fa-trash"></i></span> ' + itemText + '</li>');
+      // Creates new li from input and adds to beginning of ul
+      $('ul').prepend('<li><span><i class="fa fa-trash"></i></span> ' + itemText + '</li>');
     }
   });
 

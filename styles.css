@@ -34,12 +34,13 @@ li:nth-child(even) {
   background: #f7f7f7;
 }
 
-/* When user hovers over li, sets appearance of span content */
+/* When user hovers over li, sets appearance of span content (Bootstrap trash can icon) */
 li:hover span {
-  width: 40px;
+  width: 40px; /* Applies to icon background */
   opacity: 1.0;
 }
 
+/* Styles Bootstrap trash can icon */
 span {
   background: #e74c3c;
   height: 40px;
@@ -53,10 +54,11 @@ span {
 }
 
 input {
-  font-size: 18px;
+  font-size: 1em;
   background: #f7f7f7;
   width: 100%;
   padding: 13px 13px 13px 20px;
+  /* Includes padding and border in element's total width and height */
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -64,6 +66,7 @@ input {
   border: 3px solid rgba(0, 0, 0, 0);
 }
 
+/* Sets appearance of input box boundaries when user clicks inside */
 input:focus {
   background: white;
   border: 3px solid #642B73;
