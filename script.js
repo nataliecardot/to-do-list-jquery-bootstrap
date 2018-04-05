@@ -38,6 +38,8 @@ $(function() {
     if (e.which === 13) {
       // Grabs new to-do list item from input
       let itemText = $(this).val();
+      // If nothing in input box, ceases function execution
+      if (itemText === '') return;
       // Clears input box
       $(this).val('');
       // Creates new li from input and adds to beginning of ul
@@ -60,7 +62,7 @@ $(function() {
       'transition': '0.2s linear'
     });
     degree += 45;
-    // Animates opacity of text box, setting its display style property to none once its opacity reaches 0
+    // Animates opacity of text box, setting its display style property to none once its opacity reaches 0 if it's visible, or the inverse if already hidden
     $('input[type="text"]').fadeToggle();
   });
 
