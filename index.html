@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
       <h1>To-Do List<i class="fa fa-plus"></i></h1>
       <input type="text" placeholder="Add new">
-      <ul>
+      <!-- Class 'sortable' enables sorting with jQuery UI method .sortable() -->
+      <ul class="sortable">
         <li><span><i class="fa fa-trash"></i></span>Work on projects for one hour</li>
         <li><span><i class="fa fa-trash"></i></span>Go for a walk</li>
         <li><span><i class="fa fa-trash"></i></span>Meditate</li>

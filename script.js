@@ -21,7 +21,7 @@ $(function() {
     $('input[type="text"]').fadeToggle();
   });
 
-  // Checks off specific items upon click and adds them to class 'completed'
+  // Upon clicking on list items, adds to class 'completed' (CSS adds strike-through for class)
   $('ul').on('click', 'li', function() {
     $(this).toggleClass('completed');
   });
@@ -51,4 +51,7 @@ $(function() {
     }
   });
 
+  // Enables drag reordering of list items (uses linked jQuery UI library)
+  $('.sortable').sortable();
+  
 });

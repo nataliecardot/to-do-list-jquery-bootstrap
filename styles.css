@@ -27,6 +27,9 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  /* Makes flex container. Needed for completed items to move to end of list (see .completed ruleset) */
+  display: flex;
+  flex-direction: column;
 }
 
 li {
@@ -76,6 +79,8 @@ input:focus {
 .completed {
   color: grey;
   text-decoration: line-through;
+  /* Specifies order of item in flex container (see ul ruleset) */
+  order: 1;
 }
 
 /* Styles '+' sign. Top property makes element's top edge move above/below its normal position (in this case, lower) */
