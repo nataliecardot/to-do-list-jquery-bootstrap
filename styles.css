@@ -27,7 +27,7 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  /* Makes flex container. Needed for completed items to move to end of list (see .completed ruleset) */
+  /* Makes UL block-level flex container. Needed for completed items to move to end of list (see .completed ruleset) */
   display: flex;
   flex-direction: column;
 }
@@ -79,7 +79,7 @@ input:focus {
 .completed {
   color: grey;
   text-decoration: line-through;
-  /* Specifies order of item in flex container (see ul ruleset) */
+  /* Specifies order of item in flex container (see ul ruleset). Works because other items have order set to 0 by default */
   order: 1;
 }
 
