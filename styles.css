@@ -107,7 +107,7 @@ span {
   cursor: pointer;
 }
 
-/* Sets span content (Bootstrap trash can icon) to be 35px wide and fully opaque when upon hover over list item */
+/* Sets span content (Bootstrap trash can icon) to be 35px wide and fully opaque upon hover over list item */
 li:hover span {
   width: 35px; /* Applies to icon background */
   opacity: 1.0;
