@@ -34,7 +34,7 @@ ul {
 
 li {
   background: white;
-  /* distance from the top of the first line of text to the top of the second */
+  /* Distance from top of the first line of text to the top of second */
   line-height: 35px;
   color: #666;
   padding: 0 5px 0px 15px;
@@ -95,9 +95,9 @@ input:focus {
 span {
   background: #e74c3c;
   height: 35px;
-  width: 0px;
+  width: 0;
   opacity: 0;
-  margin-right: 0px;
+  margin-right: 0;
   position: absolute;
   /* Sets right edge to right edge of nearest positioned ancestor, li element */
   right: 0;
