@@ -117,7 +117,6 @@ span {
   height: 3.4rem;
   width: 0;
   opacity: 0;
-  margin-right: 0;
   position: absolute;
   /* Sets right edge to right edge of nearest positioned ancestor, li element */
   right: 0;
@@ -140,5 +139,14 @@ li:hover span {
   .container {
     margin: 1em auto;
     width: 90%;
+  }
+
+  li:hover span {
+    width: 15%; /* Applies to icon background */
+    opacity: 1.0;
+  }
+
+  h1 {
+    padding: 5px 25px 5px 25px;
   }
 }
