@@ -1,26 +1,41 @@
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  font-family: Roboto, sans-serif;
-  background: #642B73;
-  background: -webkit-linear-gradient(to right, #C6426E, #642B73);
-  background: linear-gradient(to right, #C6426E, #642B73);
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9fcff;
+  font-size: 1.2rem;
+  background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%);
+  /* Prevents linear gradient repeat; prevents scroll */
+  background-attachment: fixed;
+  color: #495057;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
-  background: #642B73;
+  letter-spacing: 1px;
+  background-color: #3d3d3d;
   color: white;
   margin: 0;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  font-size: 20px;
+  padding: 15px 30px 15px 30px;
   font-weight: normal;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .container {
-  margin: 100px auto;
   background: #f7f7f7;
-  width: 360px;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  border-radius: 5px;
+  margin: 5rem 0;
+  /* offset-x | offset-y | blur-radius | spread-radius. Spread radius: Positive values cause the shadow to expand and grow bigger, negative values cause shadow to shrink */
+  box-shadow: 0 10px 10px -5px;
 }
 
 ul {
@@ -35,44 +50,51 @@ ul {
 li {
   background: white;
   /* Distance from top of the first line of text to the top of second */
-  line-height: 35px;
+  line-height: 1.5rem;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
   color: #666;
-  padding: 0 5px 0px 15px;
+  padding: 0.2rem 5px 0.2rem 20px;
   position: relative;
-  cursor: default; /* Prevents default text cursor */
+  cursor: pointer;
 }
 
 /* Sets color of even li elements */
 li:nth-child(even) {
-  background: #f7f7f7;
+  background: #e9e9e9;
+}
+
+li:last-child {
+  border-radius: 0 0 5px 5px;
 }
 
 input {
   font-size: 1em; /* Text is smaller than li text without this */
-  background: #f7f7f7;
+  background: #e0e0e0;
   width: 100%;
-  height: 35px;
-  /* Distance from top of first line of text to top of second */
-  line-height: 35px;
+  height: 3.4rem;
   /* Order: top, right, bottom, left */
-  padding: 13px 13px 13px 13px;
+  padding: 13px 13px 13px 20px;
   /* Includes padding and border in element's total width and height */
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  color: #C6426E;
-  border: 3px solid rgba(0, 0, 0, 0);
+  border: 3px solid linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
 }
 
-/* Pseudoselector that sets input placeholder text color to match that of li text */
+/* Pseudo-element that sets input placeholder text color */
 input::placeholder {
-  color: #666;
+  font-style: italic;
+  font-family: "Open Sans", sans-serif;
+  color: #a6a9ad;
+}
+
+input[type=text] {
+  font-family: "Open Sans", sans-serif;
+  color: #495057;
 }
 
 /* Sets appearance of input box boundaries when user clicks inside */
 input:focus {
-  background: white;
-  border: 3px solid #642B73;
   outline: none;
 }
 
@@ -85,23 +107,23 @@ input:focus {
 
 /* Styles '+' sign. Top property makes element's top edge move above/below its normal position (in this case, lower) */
 .fa-plus {
-  float: right;
   position: relative;
-  top: 4px;
   cursor: pointer;
 }
 
-/* Styles Bootstrap trash can icon. Note default is 0px wide (which hovering changes in next CSS ruleset) */
+/* Styles Bootstrap trash can icon box. Note default is 0px wide (which hovering changes in next CSS ruleset) */
 span {
   background: #e74c3c;
-  height: 35px;
+  height: 3.4rem;
   width: 0;
   opacity: 0;
   margin-right: 0;
   position: absolute;
   /* Sets right edge to right edge of nearest positioned ancestor, li element */
   right: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
   transition: 0.2s linear;
   cursor: pointer;
@@ -109,7 +131,7 @@ span {
 
 /* Sets span content (Bootstrap trash can icon) to be 35px wide and fully opaque upon hover over list item */
 li:hover span {
-  width: 35px; /* Applies to icon background */
+  width: 8%; /* Applies to icon background */
   opacity: 1.0;
 }
 

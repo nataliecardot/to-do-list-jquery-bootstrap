@@ -1,3 +1,3 @@
-# to-do-list-jquery-bootstrap
+# TODOS
 
-A simple to-do list utilizing jQuery and Bootstrap.
+A simple to-do list made with jQuery.

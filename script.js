@@ -47,11 +47,11 @@ $(function() {
       // Clears input box
       $(this).val('');
       // Creates new li from input and adds to beginning of ul
-      $('ul').prepend('<li><span><i class="fa fa-trash"></i></span> ' + itemText + '</li>');
+      $('ul').prepend('<li><span><i class="fa fa-lg fa-trash"></i></span> ' + itemText + '</li>');
     }
   });
 
   // Enables drag reordering of list items (uses linked jQuery UI library)
   $('.sortable').sortable();
-  
+
 });

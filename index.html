@@ -3,25 +3,28 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
-    <link rel="icon" href="../img/favicon.ico">
-    <link rel="icon" href="../img/favicon-32.png" sizes="32x32">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TODOS</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
-      <h1>To-Do List<i class="fa fa-plus"></i></h1>
-      <input type="text" placeholder="Add new">
+      <h1>todos<i class="fa fa-plus"></i></h1>
+      <input autofocus type="text" placeholder="What needs to be done?">
       <!-- Class 'sortable' enables sorting with jQuery UI method .sortable() -->
       <ul class="sortable">
-        <li><span><i class="fa fa-trash"></i></span>Work on projects for one hour</li>
-        <li><span><i class="fa fa-trash"></i></span>Go for a walk</li>
-        <li><span><i class="fa fa-trash"></i></span>Meditate</li>
-        <li><span><i class="fa fa-trash"></i></span>Stretch</li>
+        <li><span><i class="fa fa-lg fa-trash"></i></span>1 hour of studying</li>
+        <li><span><i class="fa fa-lg fa-trash"></i></span>30-minute run</li>
+        <li><span><i class="fa fa-lg fa-trash"></i></span>Lift weights</li>
+        <li><span><i class="fa fa-lg fa-trash"></i></span>Meditation</li>
+        <li><span><i class="fa fa-lg fa-trash"></i></span>Gratitude journal</li>
       </ul>
     </div>
   </body>
