@@ -21,7 +21,7 @@ h1 {
   background-color: #3d3d3d;
   color: white;
   margin: 0;
-  padding: 15px 30px 15px 30px;
+  padding: 10px 30px 10px 30px;
   font-weight: normal;
   border-radius: 5px 5px 0 0;
   display: flex;
@@ -151,9 +151,21 @@ li:hover span {
   }
 }
 
-/* Very large screens */
+/* Large screens */
 @media screen and (min-width: 1400px) {
   .container {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .container {
+    width: 40%;
   }
 }
