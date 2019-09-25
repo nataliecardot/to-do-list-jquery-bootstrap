@@ -150,3 +150,10 @@ li:hover span {
     padding: 5px 25px 5px 25px;
   }
 }
+
+/* Very large screens */
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 50%;
+  }
+}
