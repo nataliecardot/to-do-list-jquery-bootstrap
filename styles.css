@@ -142,7 +142,7 @@ li:hover span {
   }
 
   li:hover span {
-    width: 15%; /* Applies to icon background */
+    width: 20%; /* Applies to icon background */
     opacity: 1.0;
   }
 
